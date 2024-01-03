@@ -33,7 +33,6 @@ void execute_instructions(FILE *file, stack_t **stack)
 		line[read - 1] = '\0';
 		opcode = strtok(line, "\t\r ");
 
-
 		if (opcode == NULL)
 			continue;
 		for (i = 0; instructions[i].opcode; i++)
