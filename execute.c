@@ -36,8 +36,6 @@ void execute_instructions(FILE *file, stack_t **stack)
 
 		if (opcode == NULL)
 			continue;
-
-
 		for (i = 0; instructions[i].opcode; i++)
 		{
 			if (strcmp(opcode, instructions[i].opcode) == 0)
