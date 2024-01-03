@@ -1,10 +1,12 @@
 #include "monty.h"
+
 /**
  * _add - Adds the top two elements in the stack
  * @stack: Pointer to a pointer to the stack.
  * @line_number: The line number where the function is called.
+ *
+ * Return: void
  */
-
 void _add(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current;
@@ -21,12 +23,14 @@ void _add(stack_t **stack, unsigned int line_number)
 	(*stack)->prev = NULL;
 	free(current);
 }
+
 /**
  * _nop - Does nothing.
  * @stack: Pointer to a pointer to the stack.
  * @line_number: The line number where the function is called.
+ *
+ * Return: void
  */
-
 void _nop(stack_t **stack, unsigned int line_number)
 {
 	(void)stack;
