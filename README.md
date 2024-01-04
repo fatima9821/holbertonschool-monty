@@ -1,5 +1,5 @@
 # C - Stacks, Queues - LIFO, FIFO
-## synthesis
+## Synthesis
 This project involves creating an interpreter for Monty ByteCodes files, which are used in the Monty 0.98 scripting language. The interpreter should be able to read Monty byte code files with a .m extension and execute the specified instructions. The implementation involves using stacks and queues, with a doubly linked list representation for stack and queue elements. The code should follow the Betty style and be compiled using gcc on Ubuntu 20.04 LTS. The interpreter, named "monty," takes a file as an argument and executes the Monty byte codes line by line. Error handling includes checking for invalid instructions, file opening issues, and memory allocation failures. The project emphasizes proper usage of global variables and provides specific guidelines for compilation and output. The learning objectives include understanding LIFO and FIFO concepts, implementing stacks and queues, and using the extern keyword to share variables between source files in C. The README.md file and header file (monty.h) with include guards are mandatory components of the project.
 ## Resources
 ## Read or watch:
