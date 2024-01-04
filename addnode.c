@@ -1,4 +1,5 @@
 #include "monty.h"
+
 /**
  * add_node - Adds a new node to the top of  stack.
  * @stack: Double pointer to the top of the stack.
@@ -7,7 +8,6 @@
 void add_node(stack_t **stack, int n)
 {
 	stack_t *new_node = malloc(sizeof(stack_t));
-
 	if (new_node == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
