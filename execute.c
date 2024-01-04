@@ -8,11 +8,10 @@
  */
 void execute_instructions(FILE *file, stack_t **stack)
 {
-	char *line = NULL;
+	char *opcode, *line = NULL;
 	size_t len = 0;
 	ssize_t read;
 	int i;
-	char *opcode;
 	unsigned int line_number = 0;
 
 	static const instruction_t instructions[] = {
@@ -25,7 +24,6 @@ void execute_instructions(FILE *file, stack_t **stack)
 		{"nop", _nop},
 		{NULL, NULL}
 	};
-
 	while ((read = getline(&line, &len, file)) != -1)
 	{
 		line_number++;
@@ -33,7 +31,6 @@ void execute_instructions(FILE *file, stack_t **stack)
 		if (line[read - 1] == '\n')
 		line[read - 1] = '\0';
 		opcode = strtok(line, "\t\r ");
-
 		if (opcode == NULL)
 			continue;
 		for (i = 0; instructions[i].opcode; i++)
